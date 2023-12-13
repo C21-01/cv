@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<title>Resume</title>
+</head>
+<body>
+	<div class="leftpanel">
+		<center>
+			<img src="photoAnna.jpg" class="photo" alt="photoAnna">
+			<header>
+        			<h1>Боснюк Анна</h1>
+        			<p>Курсант</p>
+                               
+                        </header>
+      		<ul class="nav">
+      			<li><a href="#about">Про мене</a></li>
+      			<li><a href="#skills">Вміння</a></li>
+      			<li><a href="#education">Навчання</a></li>
+      			<li><a href="#contacts">Контакти</a></li>
+			<li><p id="currentDate"></p></li>
+      		</ul>
+		</center>
+	</div>
+
+	<div class="midpanel">
+		<section>
+			<h1><center>Вас вітає Анна Боснюк!</center></h1>
+		</section>
+
+		<section id="about" class="about">
+			<h2>Про мене</h2>
+                        <p>Вік:18</p>
+                        <p>Місто:Луцьк</p>
+                        <p>Хобі:плавання</p>
+			<h4 style="margin-top: 20px;">Самомотивація</h4>
+			<p>Високо самомотивований професіонал з сильним внутрішнім прагненням досягти успіху та досягати результатів.</p>
+			<br>
+			<h4>Лідерство</h4>
+			<p>Володію навичками прийняття рішень, розв'язання конфліктів та стратегічного планування, що дозволяє успішно виконувати проекти та підвищувати ефективність команди.</p>
+			<br>
+			<h4>Вміння управляти часом</h4>
+			<p>Здатна ефективно встановлювати пріоритети завдань, забезпечувати ефективне розподілення часу та ресурсів для максимізації продуктивності.</p>
+			<br>
+			<h4>Креативний</h4>
+			<p>Креативний мислитель, здатний розробляти інноваційні рішення для складних проблем.</p>
+		</section>
+
+		<section id="skills" class="skills">
+			<h2>Знання іноземних мов</h2>
+			<div class="subskills">
+
+
+			<div class="diagrammukr">
+  				<h3>Українська</h3>
+  				<div class="prog-bar ukr">
+    				<progress id="ukr"></progress>
+  				</div>
+			</div>
+
+			<div class="diagrammpl">
+  				<h3>Польська</h3>
+  				<div class="prog-bar polish">
+    				<progress id="polish"></progress>
+  				</div>
+			</div>
+
+			<div class="diagrammeng">
+  				<h3>Англійська</h3>
+  				<div class="prog-bar eng">
+    				<progress id="eng"></progress>
+  				</div>
+			</div>
+
+			<div class="diagrammger">
+  				<h3>Німецька</h3>
+  				<div class="prog-bar ger">
+    				<progress id="ger"></progress>
+  				</div>
+			</div>
+			</div>
+		</section>
+
+    	<section id="education" class="education">
+    		<h2>Навчання</h2>
+        	<p>В процесі: вища освіта - Бакалавр <a href="https://iszzi.kpi.ua">ІССЗІ</a>, Кібербезпека</p>
+        	<p>Отримана: повна середня освіта - <a href="https://vvl.org.ua">Волинський обласний ліцей з посиленою військово-фізичною підготовкою імені Героїв Небесної Сотні</a></p>
+    	</section>
+
+    	<section id="contacts" class="contacts">
+       		<h2>Контакти</h2>
+       		<p><img src="maillogo.png" class="logo"> Email:<a href="bosnykanna@gmail.com"> bosnykanna@gmail.com </a></p>
+       		<p><img src="phonelogo.png" class="logo"> Телефон: +380994709927</p>
+        	<p><a href="https://github.com/C21-01"><img src="githublogo.png" class="logo"> GitHub</a></p>
+        	<p><a href="https://www.instagram.com/anichka.bosniuk/"><img src="instagramlogo.png" class="logo"> Instagram</a></p>
+      	</section>
+
+      	<section style="margin-top:10px; margin-bottom:10px;">
+      		<footer><center>Вогонь запеклих не пече</center></footer>
+      	</section>
+	</div>
+<script>
+function displayCurrentDate() { 
+      let currentDate = new Date().toLocaleDateString("uk-UA"); 
+      return "Поточна дата: " + currentDate; 
+    } 
+ // Отримання елемента для відображення поточної дати 
+    let currentDateElement = document.getElementById('currentDate'); 
+ 
+    // Оновлення поточної дати 
+    function updateCurrentDate() { 
+      currentDateElement.textContent = displayCurrentDate(); 
+    } 
+ 
+    // Виклик функції оновлення дати 
+    updateCurrentDate(); 
+</script>
+</body>
+</html>
